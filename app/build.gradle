@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion compileSdkVers
+    buildToolsVersion buildToolsVers
+
+    defaultConfig {
+        applicationId "top.androider.app"
+        minSdkVersion minSdkVers
+        targetSdkVersion targetSdkVers
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation corektx
+    implementation appcompat
+    implementation constraintlayout
+
+}

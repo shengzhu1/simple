@@ -1,0 +1,13 @@
+ext{
+    compileSdkVers=29
+    buildToolsVers="29.0.3"
+    minSdkVers=23
+    targetSdkVers=29
+
+    corektx='androidx.core:core-ktx:1.3.0'
+    mutlidex='com.android.support:multidex:2.0.0'
+    appcompat='androidx.appcompat:appcompat:1.1.0'
+    annotation='androidx.annotation:annotation:1.1.0'
+    constraintlayout='androidx.constraintlayout:constraintlayout:1.1.3'
+    gson='com.google.code.gson:gson:2.8.5'
+}
